@@ -4,8 +4,23 @@
   box-sizing: border-box;
 }
 
+.full-bg-color {
+  background-color: #f4f5f7;
+}
+
 .nav-links {
-  display: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-link {
+  margin: 0 32px;
+  text-decoration: none;
 }
 
 .header-logo {
@@ -17,20 +32,38 @@
   color: #6070ff;
   margin-top: 10px;
   margin-left: 25px;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  height: 72px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 26px 80px;
 }
 
-.headline {
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./images/header-shapes\ mobile.png);
+  background-image: url(./images/Header\ bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  border-bottom-left-radius: 50px;
+  height: 718px;
+  background-color: #fff;
+}
+
+.headline {
+  max-width: 1010px;
+  padding: 0 70px;
 }
 
 .headline-title {
@@ -39,12 +72,56 @@
   font-weight: 700;
   color: #172b4d;
   line-height: 52px;
+  margin-left: 12px;
+  width: 90%;
+}
+
+.social-title {
+  color: #7f8cff;
+  margin-top: 12px;
+  margin-left: 12px;
 }
 
 .social-links {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 12px;
+}
+
+.social-link {
+  margin-right: 17px;
+}
+
+.headline-content {
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    min-height: 916px;
     display: flex;
-    justify-content: start;
-    list-style: none;
-    padding-top: 20px;
-    padding-left: 10px;
+    justify-content: center;
+    background-image: url(./images/header-shapes\ mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: 90%;
+  }
+
+  .header-logo {
+    margin-left: -20px;
+  }
 }
