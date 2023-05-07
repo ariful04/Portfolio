@@ -89,7 +89,7 @@
 
 .social-link:hover {
   transform: rotate(360deg);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .header-logo:hover {
