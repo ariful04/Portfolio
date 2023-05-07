@@ -8,21 +8,6 @@
   background-color: #f4f5f7;
 }
 
-.nav-links {
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  display: flex;
-  font-weight: 500;
-  list-style: none;
-  text-decoration: none;
-}
-
-.nav-link {
-  margin: 0 32px;
-  text-decoration: none;
-}
-
 .header-logo {
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -30,14 +15,13 @@
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
-  margin-top: 10px;
-  margin-left: 25px;
   text-decoration: none;
 }
 
 .menu-icon {
-  display: none;
-  cursor: pointer;
+  width: 24px;
+  height: auto;
+  padding: 3px 5px;
 }
 
 .navbar {
@@ -53,10 +37,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./images/Header\ bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-bottom-left-radius: 50px;
+  background-image: url(./images/header-shapes\ mobile.png);
+  background-repeat: space;
+  background-size: cover;
+  border-bottom-left-radius: 100px;
   height: 718px;
   background-color: #fff;
 }
@@ -76,6 +60,13 @@
   width: 90%;
 }
 
+.headline-content {
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+  margin-left: 12px;
+}
+
 .social-title {
   color: #7f8cff;
   margin-top: 12px;
@@ -90,38 +81,22 @@
   padding-left: 12px;
 }
 
-.social-link {
+
+.social-link a {
+  width: 15px;
+  margin-top: 10px;
   margin-right: 17px;
 }
 
-.headline-content {
-  font-size: 20px;
-  line-height: 28px;
-  color: #344563;
-  margin-left: 12px;
+.social-link:hover {
+  transform: rotate(360deg);
+  transition: .5s;
 }
 
-@media screen and (max-width: 768px) {
-  .main-content {
-    min-height: 916px;
-    display: flex;
-    justify-content: center;
-    background-image: url(./images/header-shapes\ mobile.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .nav-link {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-    margin-left: 90%;
-  }
-
-  .header-logo {
-    margin-left: -20px;
-  }
+.header-logo:hover {
+  transform: rotate(360deg);
+  transition: 1s all;
+}
+.social-icon {
+  max-width: 100%;
 }
